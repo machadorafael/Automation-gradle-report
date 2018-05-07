@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cenario: Efetuar todas as transacoes no Woop Web" tests="26" skipped="0" failures="0" errors="0" timestamp="2018-05-03T19:52:15" hostname="DESKTOP-U2C107C" time="35.757">
+  <properties/>
+  <testcase name="Dado que estou na HomePage do Woop" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="Quando estou logado" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="Entao devo conseguir acessar o menu Ajuda" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E clico em Minimizar chat" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E posiciono o mouse sobre o menu Saldo" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.001"/>
+  <testcase name="E devo conseguir visualizar meu saldo" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Perfil" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Notificacoes" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E clico no botao Voltar" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.001"/>
+  <testcase name="E devo conseguir acessar o menu Meus dados" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E clico no X" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o menu Extrato e visualizar a tela Gestao financeira" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E volto para a Home" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o menu Transferir e visualizar a tela Transferir Grana" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.001"/>
+  <testcase name="E volto para a Home" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o menu Pagar e visualizar a tela Pagamentos" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E volto para a Home" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Pagamentos" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Saldo e Extrato" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Transferencia" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Cartoes" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Comprovantes" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Credito" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Poupanca" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="E devo conseguir acessar o Menu Minha Cooperativa" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="0.0"/>
+  <testcase name="classMethod" classname="Cenario: Efetuar todas as transacoes no Woop Web" time="42.798"/>
+  <system-out><![CDATA[16:52:09.612 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+16:52:09.939 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 2.36
+16:52:09.943 [Test worker] INFO io.github.bonigarcia.wdm.Downloader - Using binary driver previously downloaded
+16:52:09.944 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\user\.m2\repository\webdriver\chromedriver\win32\2.36\chromedriver.exe
+]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+May 03, 2018 4:52:09 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 24337
+Only local connections are allowed.
+May 03, 2018 4:52:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>

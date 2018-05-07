@@ -1,0 +1,49 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'br.com.cwi'
+version = '0.0.1-SNAPSHOT'
+
+description = """automation-web"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+configurations.all {
+  exclude group: 'com.sikulix', module: '${sikulix.libs}'
+}
+
+dependencies {
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:'3.11.0'
+    testCompile group: 'info.cukes', name: 'cucumber-java', version:'1.2.5'
+    testCompile group: 'info.cukes', name: 'cucumber-core', version:'1.2.5'
+    testCompile group: 'commons-io', name: 'commons-io', version:'2.5'
+    testCompile group: 'log4j', name: 'log4j', version:'1.2.17'
+    // Sikuli makes use of a maven profile based on activation os family to set
+    // the sekulix.libs variable which determine which libs dependency gets brought in
+    // This technique appears not to be compatible with gradle - so we have to suppress the
+    // libs dependency and handle this here ourselves
+    testCompile ( group: 'com.sikulix', name: 'sikulixapi', version: '1.1.0')
+
+    if (org.gradle.internal.os.OperatingSystem.current().isWindows()) {
+        println 'Setting sikuli libs to Windows'
+        testCompile ( group: 'com.sikulix', name: 'sikulixlibswin', version: '1.1.0')
+    } else if (org.gradle.internal.os.OperatingSystem.current().isLinux() ) {
+        println 'Setting sikuli libs to Linux'
+        testCompile ( group: 'com.sikulix', name: 'sikulixlibslux', version: '1.1.0')
+    } else if (org.gradle.internal.os.OperatingSystem.current().isMacOsX() ) {
+        println 'Setting sikuli libs to Mac'
+        testCompile ( group: 'com.sikulix', name: 'sikulixlibsmac', version: '1.1.0')
+    } else {
+        throw new Exception('Unknown OS')
+    }
+    testCompile group: 'io.github.marcoslimaqa', name: 'sikulifactory', version:'1.1.0'
+    testCompile group: 'com.aventstack', name: 'extentreports', version:'3.0.6'
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+    testCompile group: 'selenium-java-evidence', name: 'selenium-java-evidence', version:'1.0.0'
+    testCompile group: 'io.github.bonigarcia', name: 'webdrivermanager', version:'2.2.1'
+    testCompile group: 'info.cukes', name: 'cucumber-junit', version:'1.2.5'
+}

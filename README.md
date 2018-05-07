@@ -1,2 +1,2 @@
-# Automation-gradle-report
-Projeto de Automação de Testes com Gradle e Extent Report
+# Sicredi-Automation-Web-Base
+Projeto base de automação de testes web - Sicredi
